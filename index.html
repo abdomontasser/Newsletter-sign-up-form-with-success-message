@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <title>Newsletter sign-up form || with success message</title>
+</head>
+<body>
+<div class="parent">
+   <!-- Create The Success State  -->
+  <div class="main-sucess hide" >
+    <div class="Logo"><svg xmlns="http://www.w3.org/2000/svg" width="45" height="64" viewBox="0 0 64 64">
+      <defs><linearGradient id="a" x1="100%" x2="0%" y1="0%" y2="100%">
+        <stop offset="0%" stop-color="#FF6A3A"/>
+        <stop offset="100%" stop-color="#FF527B"/></linearGradient>
+      </defs><g fill="none"><circle cx="32" cy="32" r="32" fill="url(#a)"/>
+        <path stroke="#FFF" stroke-width="4" d="m18.286 34.686 8.334 7.98 19.094-18.285"/>
+      </g>
+    </svg>
+  </div>
+    <div class="success-header"><p>Thanks for  <br>
+      subscribing</p></div>
+    <div class="success-message"></div>
+    <div class="success-btn"><button>Dismiss message</button></div>
+  </div>
+
+
+  <div class="child">
+    <div class="sub-child-1">
+      <div class="header">
+        <h3 class="heading">Stay Updated!</h3>
+        <p class="heading-2">join 60,0000+ product mangers receiving monthly updates on</p>
+      </div>
+    <div class="features">
+      <div class="product-1">
+        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
+          <g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/>
+            <path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/></g>
+          </svg><p>product discovery and building what matters </p>
+      </div>
+      <div class="product-2">
+        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
+          <g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/>
+            <path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/></g>
+          </svg>
+          <p>product discovery and building what matters </p>
+      </div>
+      <div class="product-3">
+        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
+          <g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/>
+            <path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/></g>
+          </svg>
+          <p>product discovery and building what matters </p>
+      </div>
+    </div>
+      <div class="form">
+        <label for="email">Email address</label>
+        <br>
+        <input type="email" placeholder="email@company.com" id="email">
+      </div>
+      <button id="submit-btn">Subscribe to monthly newsletter</button>
+    </div>
+    <div class="sub-child-2">
+    </div>
+  </div>
+</div>
+<script src="JS/main.js"></script>
+</body>
+</html>

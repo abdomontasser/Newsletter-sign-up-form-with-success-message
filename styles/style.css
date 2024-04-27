@@ -1,0 +1,194 @@
+body
+{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    background-color: hsl(234, 29%, 20%);
+}
+
+.parent
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.child
+{
+    width: calc(100%/2);
+    height:70vh;
+    background-color: white;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.sub-child-1
+{   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.sub-child-2
+{
+    background-image: url(../assets/images/illustration-sign-up-desktop.svg);
+    background-repeat: no-repeat;
+    background-size:calc(100%/1.1);
+    background-position: center;
+}
+.header
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+h3
+{
+  font-size: 32px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  margin-top: 10px;
+}
+.heading-2
+{
+    margin-left: 25px;
+    margin-bottom: 0px;
+
+}
+.features
+{
+    display: flex;
+    justify-content: baseline;
+    align-items: baseline;
+    flex-direction: column;
+}
+.features p
+{
+    margin-left: 20px;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif; 
+}
+.product-1,
+.product-2,
+.product-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product-1,
+.product-2,
+.product-3, svg
+{
+    margin-left: 20px;
+}
+.form 
+{
+margin-right: 30px;
+}
+.form input
+{
+padding: 10px 14px;
+width: 100%;
+margin: auto;
+outline: none;
+border-radius: 5px;
+}
+.form label
+{
+    font-size: 15px;
+}
+button
+{
+margin: 10px auto;
+border: none;
+padding: 10px 20px;
+background-color: hsl(234, 29%, 20%);
+color: white;
+border-radius: 5px;
+cursor: pointer;
+font-family: "Roboto", sans-serif; 
+}
+.success{
+    outline: none;
+    border: 1px solid green;
+}
+.fail
+{
+       outline: none;
+    border: 1px solid red;
+}
+
+.main-sucess
+{
+    width: calc(100%/3);
+    height:60vh;
+    background-color: white;
+    border-radius: 15px;
+    display: grid;
+  grid-template-rows: auto auto 1fr 1fr;
+}
+.Logo
+{
+    display: flex;
+    justify-content: baseline;
+    align-items: baseline;
+    margin:20px;
+}
+
+.success-header
+{
+display: flex;
+justify-content: baseline;
+align-items: baseline;
+margin-left: 40px;
+}
+
+.success-header p
+{
+    font-size: 30px;
+    font-family: "Roboto", sans-serif; 
+    font-weight: 700;
+}
+.success-message
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.success-message p
+{
+    margin-left: 20px;
+}
+.success-btn
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hide
+{
+    display: none;
+}
+
+
+
+/* Responsive styles */
+
+@media (max-width: 768px) {
+    .child {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .form {
+        margin-right: 0;
+    }
+
+    .form input {
+        width: calc(100% - 28px); 
+    }
+}   
